@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="gigs">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.gigs.size > 0 -%}
+    <ul class="gig-list">
+      {%- for gig in site.gigs -%}
+      <li>
+        <span class="gig-meta">
+          {{ gig.gig_date }} {{ gig.gig_time }}
+        </span>
+        <p class="gig-address">{{ gig.address_textarea }}</p>
+        <h3>
+          <a class="gig-link" href="{{ gig.url | relative_url }}">
+            more info
+          </a>
+        </h3>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="gig">
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+  <a href="/gigs">&lt; All Gigs</a>
+
+  <header class="gig-header">
+    <h1 class="gig-datetime">
+      {{ page.gig_date | date: date_format }}
+      {{ page.gig_time }}
+    </h1>
+  </header>
+
+  <p class="gig-address">{{ page.address_textarea }}</p>
+
+  <div class="gig-content">
+    {{ content }}
+  </div>
+</div>

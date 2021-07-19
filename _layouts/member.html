@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="member">
+  <a href="/members">&lt; All Members</a>
+
+  <header class="member-header">
+    <h1 class="member-title p-name">{{ page.display_name | escape }}</h1>
+  </header>
+
+  <img class="member-avatar" src="{{ page.avatar_path }}" />
+
+  <div class="member-content e-content">
+    {{ content }}
+  </div>
+</div>

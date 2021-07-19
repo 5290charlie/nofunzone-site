@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="tunes">
+  <a href="/tunes">&lt; All Tunes</a>
+
+  <header class="tunes-header">
+    <h1 class="tunes-title p-name">{{ page.name | escape }}</h1>
+  </header>
+
+  <img class="tunes-image" src="{{ page.image_path }}" />
+
+  <div class="tunes-content e-content">
+    {{ content }}
+  </div>
+</div>
