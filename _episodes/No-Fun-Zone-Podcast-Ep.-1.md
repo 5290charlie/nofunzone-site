@@ -3,7 +3,7 @@ layout: episode
 name: No Fun Zone Podcast Ep. 1
 file_path: null
 image_path: null
-youtube: 'https://youtu.be/QS5SuY-ynk8'
+youtube: 'https://www.youtube.com/watch?v=QS5SuY-ynk8'
 itunes: null
 spotify: null
 soundcloud: 'https://soundcloud.com/user-178364892/no-fun-zone-pod-episode-1'
